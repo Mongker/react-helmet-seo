@@ -23,7 +23,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Lê Văn Mong</h1>
-      <MetaComponent jsonLd={data} title={"abcd"} description={"xyza"} />
+      <MetaComponent jsonLd={data} />
     </div>
   );
 }
