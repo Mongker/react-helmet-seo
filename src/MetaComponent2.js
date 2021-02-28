@@ -9,10 +9,9 @@ function MetaComponent(props) {
         <title>{props.title || ''}</title>
         <meta name="description" content={props.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" sizes="192x192" href={props.icon} />
+        <link rel="icon" href={props.icon} />
         <link rel="apple-touch-icon" href={props.icon} />
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
-        <link rel="icon" href="/static/favicon.ico" />
         <meta property="og:url" content={props.url} />
         <meta property="og:title" content={props.title} />
         <meta property="og:description" content={props.description} />
@@ -27,6 +26,7 @@ function MetaComponent(props) {
         )}
         {/* <script type="application/ld+json">{JSON.stringify(jsonLd)} */}
       </Helmet>
+      <img src={props.icon} />
     </div>
 
   );
@@ -45,7 +45,7 @@ MetaComponent.defaultProps = {
   icon: 'https://vnreview.vn/ThemeReview-theme/images/background/favicon-16x16.png',
   description: 'Một bé gái 3 tuổi tự trèo ra lan can, treo mình lơ lửng từ ban công tầng 12A của một tòa chung cư ở đường Nguyễn Huy Tưởng, Q.Thanh Xuân, Hà Nội, khiến nhiều người chứng kiến không khỏi một phen hoảng hồn.',
   url: 'https://thanhnien.vn/content/MTA0MTY1Mg==.html',
-  ogImage: 'https://image.thanhnien.vn/1080/uploaded/lequan/2021_02_28/begai_hghi.jpg',
+  ogImage: 'https://vanhienblog.info/wp-content/uploads/2019/02/anh-gai-xinh-dep-hot-girl-1-00-600x445.jpg',
 }
 
 export default MetaComponent;
